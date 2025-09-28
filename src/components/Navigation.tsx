@@ -45,7 +45,7 @@ const Navigation = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("#home"); }}
             className="text-xl font-bold text-gradient-primary"
           >
-            &lt;Developer /&gt;
+            &lt;mahir.dev /&gt;
           </a>
 
           {/* Desktop Navigation */}

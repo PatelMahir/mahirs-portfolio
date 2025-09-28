@@ -9,12 +9,14 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    mobile: "",
+    message: "",
+    purpose: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -34,7 +36,7 @@ const Contact = () => {
         description: "Thank you for your message. I'll get back to you within 24 hours.",
       });
       
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", mobile: "", message: "", purpose: "" });
     } catch (error) {
       toast({
         title: "Error",
@@ -50,19 +52,13 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@developer.com",
-      href: "mailto:hello@developer.com"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "mahir17062002@gmail.com",
+      href: "mailto:mahir17062002@gmail.com"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Ahmedabad, Gujarat, India",
       href: "#"
     }
   ];
@@ -72,19 +68,13 @@ const Contact = () => {
       icon: Github,
       label: "GitHub",
       href: "https://github.com",
-      username: "@developer"
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      href: "https://linkedin.com",
-      username: "/in/developer"
+      username: "@mahir"
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:hello@developer.com",
-      username: "hello@developer.com"
+      href: "mailto:mahir17062002@gmail.com",
+      username: "mahir17062002@gmail.com"
     }
   ];
 
@@ -139,9 +129,47 @@ const Contact = () => {
                     />
                   </div>
                 </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="mobile" className="block text-sm font-medium mb-2">
+                      Mobile Number
+                    </label>
+                    <Input
+                      id="mobile"
+                      name="mobile"
+                      type="tel"
+                      required
+                      value={formData.mobile}
+                      onChange={handleChange}
+                      className="bg-secondary/50 border-border"
+                      placeholder="+91 98765 43210"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="purpose" className="block text-sm font-medium mb-2">
+                      Purpose
+                    </label>
+                    <select
+                      id="purpose"
+                      name="purpose"
+                      required
+                      value={formData.purpose}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 bg-secondary/50 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    >
+                      <option value="">Select purpose</option>
+                      <option value="web-development">Web Development</option>
+                      <option value="mobile-app">Mobile App Development</option>
+                      <option value="api-development">API Development</option>
+                      <option value="consultation">Consultation</option>
+                      <option value="maintenance">Maintenance & Support</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Project Details
+                    Details or Message
                   </label>
                   <Textarea
                     id="message"
@@ -227,7 +255,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-muted-foreground rounded-full mr-3"></div>
-                  <span className="text-sm">GMT-8 (PST) timezone</span>
+                  <span className="text-sm">GMT+5:30 (IST) timezone</span>
                 </div>
               </div>
             </div>

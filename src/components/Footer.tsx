@@ -10,13 +10,8 @@ const Footer = () => {
       label: "GitHub"
     },
     {
-      icon: Linkedin,
-      href: "https://linkedin.com",
-      label: "LinkedIn"
-    },
-    {
       icon: Mail,
-      href: "mailto:hello@developer.com",
+      href: "mailto:mahir17062002@gmail.com",
       label: "Email"
     }
   ];
@@ -42,7 +37,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div>
             <h3 className="text-xl font-bold text-gradient-primary mb-4">
-              &lt;Developer /&gt;
+              &lt;mahir.dev /&gt;
             </h3>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Full-stack developer passionate about creating innovative solutions 
@@ -86,9 +81,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>📧 hello@developer.com</p>
-              <p>📱 +1 (555) 123-4567</p>
-              <p>📍 San Francisco, CA</p>
+              <p>📧 mahir17062002@gmail.com</p>
+              <p>📍 Ahmedabad, Gujarat, India</p>
               <p className="text-sm mt-4">
                 <span className="inline-block w-2 h-2 bg-accent rounded-full mr-2"></span>
                 Available for new projects
