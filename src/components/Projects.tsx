@@ -1,4 +1,3 @@
-import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import socialImg from "@/assets/project-social.jpg";
@@ -15,54 +14,42 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description: "Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard. Built for scalability and performance.",
       image: ecommerceImg,
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveDemo: "#",
-      github: "#"
+      tech: ["React", "Node.js", "MongoDB", "Stripe"]
     },
     {
       id: 2,
       title: "Social Media App",
       description: "Cross-platform mobile app with real-time chat, media sharing, and social features. Built with modern mobile development practices.",
       image: socialImg,
-      tech: ["Flutter", "Firebase", "Dart", "FCM"],
-      liveDemo: "#",
-      github: "#"
+      tech: ["Flutter", "Firebase", "Dart", "FCM"]
     },
     {
       id: 3,
       title: "Business Analytics Dashboard",
       description: "Comprehensive business intelligence dashboard with real-time data visualization, reporting, and user management systems.",
       image: dashboardImg,
-      tech: ["Laravel", "MySQL", "Chart.js", "PHP"],
-      liveDemo: "#",
-      github: "#"
+      tech: ["Laravel", "MySQL", "Chart.js", "PHP"]
     },
     {
       id: 4,
       title: "iOS Productivity App",
       description: "Native iOS application for productivity and task management with offline support and iCloud synchronization.",
       image: iosImg,
-      tech: ["Swift", "Core Data", "CloudKit", "iOS"],
-      liveDemo: "#",
-      github: "#"
+      tech: ["Swift", "Core Data", "CloudKit", "iOS"]
     },
     {
       id: 5,
       title: "Cross-Platform Finance App",
       description: "Multi-platform financial tracking application with secure authentication and real-time data synchronization.",
       image: reactNativeImg,
-      tech: ["React Native", "TypeScript", "AWS", "Redux"],
-      liveDemo: "#",
-      github: "#"
+      tech: ["React Native", "TypeScript", "AWS", "Redux"]
     },
     {
       id: 6,
       title: "RESTful API Service",
       description: "Scalable REST API with comprehensive documentation, authentication, and third-party integrations for enterprise clients.",
       image: apiImg,
-      tech: ["Python", "FastAPI", "PostgreSQL", "Docker"],
-      liveDemo: "#",
-      github: "#"
+      tech: ["Python", "FastAPI", "PostgreSQL", "Docker"]
     }
   ];
 
@@ -104,17 +91,6 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
-                
-                <div className="flex gap-3">
-                  <Button size="sm" className="btn-hero flex-1">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </Button>
                 </div>
               </div>
             </div>
