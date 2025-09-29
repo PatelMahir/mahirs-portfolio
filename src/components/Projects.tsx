@@ -11,45 +11,51 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard. Built for scalability and performance.",
+      title: "Task Management System",
+      description: "A comprehensive task management application with real-time collaboration, project tracking, and team management features.",
       image: ecommerceImg,
-      tech: ["React", "Node.js", "MongoDB", "Stripe"]
+      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+      github: "https://github.com/PatelMahir/task-management-system"
     },
     {
       id: 2,
-      title: "Social Media App",
-      description: "Cross-platform mobile app with real-time chat, media sharing, and social features. Built with modern mobile development practices.",
+      title: "E-Learning Platform",
+      description: "Interactive e-learning platform with course management, video streaming, quizzes, and progress tracking for students and instructors.",
       image: socialImg,
-      tech: ["Flutter", "Firebase", "Dart", "FCM"]
+      tech: ["Angular", "Express.js", "MySQL", "JWT"],
+      github: "https://github.com/PatelMahir/e-learning-platform"
     },
     {
       id: 3,
-      title: "Business Analytics Dashboard",
-      description: "Comprehensive business intelligence dashboard with real-time data visualization, reporting, and user management systems.",
+      title: "Inventory Management Dashboard",
+      description: "Real-time inventory tracking system with analytics, supplier management, and automated stock alerts for businesses.",
       image: dashboardImg,
-      tech: ["Laravel", "MySQL", "Chart.js", "PHP"]
+      tech: ["Vue.js", "Laravel", "PostgreSQL", "Redis"],
+      github: "https://github.com/PatelMahir/inventory-management"
     },
     {
       id: 4,
-      title: "iOS Productivity App",
-      description: "Native iOS application for productivity and task management with offline support and iCloud synchronization.",
+      title: "Weather Forecast App",
+      description: "Cross-platform mobile weather application with location-based forecasts, weather alerts, and intuitive UI design.",
       image: iosImg,
-      tech: ["Swift", "Core Data", "CloudKit", "iOS"]
+      tech: ["Flutter", "Dart", "OpenWeather API", "SQLite"],
+      github: "https://github.com/PatelMahir/weather-forecast-app"
     },
     {
       id: 5,
-      title: "Cross-Platform Finance App",
-      description: "Multi-platform financial tracking application with secure authentication and real-time data synchronization.",
+      title: "Expense Tracker Mobile App",
+      description: "Personal finance management app with expense categorization, budget planning, and financial insights with offline support.",
       image: reactNativeImg,
-      tech: ["React Native", "TypeScript", "AWS", "Redux"]
+      tech: ["React Native", "TypeScript", "Realm DB", "Chart.js"],
+      github: "https://github.com/PatelMahir/expense-tracker-mobile"
     },
     {
       id: 6,
-      title: "RESTful API Service",
-      description: "Scalable REST API with comprehensive documentation, authentication, and third-party integrations for enterprise clients.",
+      title: "Blog Management API",
+      description: "RESTful API for blog management with user authentication, content moderation, and SEO optimization features.",
       image: apiImg,
-      tech: ["Python", "FastAPI", "PostgreSQL", "Docker"]
+      tech: ["Python", "Django", "PostgreSQL", "Celery"],
+      github: "https://github.com/PatelMahir/blog-management-api"
     }
   ];
 
@@ -82,7 +88,7 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, index) => (
                     <span 
                       key={index}
@@ -92,6 +98,15 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+                
+                <a 
+                  href={project.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary-glow transition-colors text-sm font-medium"
+                >
+                  View on GitHub →
+                </a>
               </div>
             </div>
           ))}
