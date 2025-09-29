@@ -38,7 +38,7 @@ const About = () => {
               </div>
               <div className="flex-1 lg:text-left text-center">
                 <p className="text-lg text-muted-foreground mb-4">
-                  I'm a passionate full-stack developer with over 5 years of experience building 
+                  I'm a passionate full-stack developer with over 3 years of experience building 
                   web and mobile applications. I specialize in creating robust, scalable solutions 
                   using modern technologies and frameworks.
                 </p>
