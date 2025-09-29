@@ -15,7 +15,7 @@ const Projects = () => {
       description: "A comprehensive task management application with real-time collaboration, project tracking, and team management features.",
       image: ecommerceImg,
       tech: ["React", "Node.js", "MongoDB", "Socket.io"],
-      github: "https://github.com/PatelMahir/task-management-system"
+      github: "https://github.com/PatelMahir/TaskUnity-App"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Projects = () => {
       description: "Interactive e-learning platform with course management, video streaming, quizzes, and progress tracking for students and instructors.",
       image: socialImg,
       tech: ["Angular", "Express.js", "MySQL", "JWT"],
-      github: "https://github.com/PatelMahir/e-learning-platform"
+      github: "https://github.com/PatelMahir/EDU-FRAMER"
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Projects = () => {
       description: "Real-time inventory tracking system with analytics, supplier management, and automated stock alerts for businesses.",
       image: dashboardImg,
       tech: ["Vue.js", "Laravel", "PostgreSQL", "Redis"],
-      github: "https://github.com/PatelMahir/inventory-management"
+      github: "https://github.com/PatelMahir/Inventory-Management"
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const Projects = () => {
       description: "Cross-platform mobile weather application with location-based forecasts, weather alerts, and intuitive UI design.",
       image: iosImg,
       tech: ["Flutter", "Dart", "OpenWeather API", "SQLite"],
-      github: "https://github.com/PatelMahir/weather-forecast-app"
+      github: "https://github.com/PatelMahir/Weather_App"
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const Projects = () => {
       description: "Personal finance management app with expense categorization, budget planning, and financial insights with offline support.",
       image: reactNativeImg,
       tech: ["React Native", "TypeScript", "Realm DB", "Chart.js"],
-      github: "https://github.com/PatelMahir/expense-tracker-mobile"
+      github: "https://github.com/PatelMahir/Expense-Tracker-App-ReactNative-Typescript"
     },
     {
       id: 6,
@@ -55,7 +55,7 @@ const Projects = () => {
       description: "RESTful API for blog management with user authentication, content moderation, and SEO optimization features.",
       image: apiImg,
       tech: ["Python", "Django", "PostgreSQL", "Celery"],
-      github: "https://github.com/PatelMahir/blog-management-api"
+      github: "https://github.com/PatelMahir/BLOG_REST_API_DJANGO"
     }
   ];
 
