@@ -11,7 +11,7 @@ const Footer = () => {
     },
     {
       icon: Mail,
-      href: "mailto:mahir17062002@gmail.com",
+      href: "mailto:mahirp17@zohomail.in",
       label: "Email"
     }
   ];
@@ -81,7 +81,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>📧 mahir17062002@gmail.com</p>
+              <p>📧 mahirp17@zohomail.in</p>
               <p>📍 Ahmedabad, Gujarat, India</p>
               <p className="text-sm mt-4">
                 <span className="inline-block w-2 h-2 bg-accent rounded-full mr-2"></span>

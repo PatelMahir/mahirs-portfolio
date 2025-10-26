@@ -52,8 +52,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "mahir17062002@gmail.com",
-      href: "mailto:mahir17062002@gmail.com"
+      value: "mahirp17@zohomail.in",
+      href: "mailto:mahirp17@zohomail.in"
     },
     {
       icon: MapPin,
@@ -73,8 +73,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:mahir17062002@gmail.com",
-      username: "mahir17062002@gmail.com"
+      href: "mailto:mahirp17@zohomail.in",
+      username: "mahirp17@zohomail.in"
     }
   ];
 
