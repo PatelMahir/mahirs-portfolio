@@ -13,12 +13,12 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 float">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display">
-              I Turn Startup Ideas Into
+              Full-Stack 
               <span className="text-gradient-primary block mt-2">
-                High-Quality Apps
+                Web & Mobile
               </span>
               <span className="text-gradient-accent block mt-2">
-                Fast & Scalable
+                App Developer
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
