@@ -13,16 +13,16 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 float">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display">
-              Full-Stack 
+              I Turn Startup Ideas Into
               <span className="text-gradient-primary block mt-2">
-                Web & Mobile
+                High-Quality Apps
               </span>
               <span className="text-gradient-accent block mt-2">
-                App Developer
+                Fast & Scalable
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I build scalable, secure, and user-friendly applications that solve real problems and deliver exceptional user experiences.
+              Helping early-stage startups and small businesses build web and mobile applications with React, Node.js, and Flutter. Delivering speed, quality, and scalable architecture.
             </p>
           </div>
           
@@ -32,7 +32,7 @@ const Hero = () => {
               className="btn-hero px-8 py-6 text-lg"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Hire Me
+              Let's Talk About Your Project
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
@@ -47,16 +47,16 @@ const Hero = () => {
           </div>
 
           <div className="mt-16 text-center">
-            <p className="text-sm text-muted-foreground mb-4">Trusted by clients worldwide</p>
+            <p className="text-sm text-muted-foreground mb-4">Trusted by startups and small businesses</p>
             <div className="flex justify-center items-center space-x-8 opacity-60">
               <div className="h-12 w-24 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg flex items-center justify-center text-xs font-semibold">
-                STARTUP
+                STARTUPS
               </div>
               <div className="h-12 w-24 bg-gradient-to-r from-accent/20 to-primary/20 rounded-lg flex items-center justify-center text-xs font-semibold">
-                ENTERPRISE
+                SMBs
               </div>
               <div className="h-12 w-24 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg flex items-center justify-center text-xs font-semibold">
-                AGENCY
+                AGENCIES
               </div>
             </div>
           </div>

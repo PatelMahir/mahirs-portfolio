@@ -1,49 +1,37 @@
 import { 
-  Globe, 
   Smartphone, 
   Code2, 
   Database, 
-  Wrench, 
-  Zap 
+  Zap,
+  ArrowRight
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Services = () => {
   const services = [
     {
-      icon: Globe,
-      title: "Custom Web Development",
-      description: "Full-stack web applications built with modern frameworks like React, Vue.js, and Node.js. Responsive, fast, and SEO-optimized.",
-      features: ["Responsive Design", "Performance Optimization", "SEO Implementation", "Modern UI/UX"]
+      icon: Zap,
+      title: "MVP Development",
+      description: "Launch your product fast with a fully functional MVP. Get to market quickly with a solid foundation that validates your idea and attracts early users.",
+      features: ["Rapid Prototyping", "Core Feature Focus", "User Feedback Integration", "Iterative Development"]
     },
     {
       icon: Smartphone,
-      title: "Mobile App Development",
-      description: "Native iOS and Android apps, plus cross-platform solutions. User-friendly interfaces with robust backend integration.",
-      features: ["iOS Development", "Android Development", "App Store Deployment", "User Analytics"]
-    },
-    {
-      icon: Code2,
-      title: "Cross-Platform Solutions",
-      description: "React Native and Flutter applications that work seamlessly across multiple platforms while maintaining native performance.",
-      features: ["React Native", "Flutter", "Code Sharing", "Platform Optimization"]
+      title: "Cross-Platform Mobile Apps",
+      description: "iOS and Android apps from a single codebase using React Native or Flutter. Native performance, reduced development time, and consistent user experience.",
+      features: ["React Native & Flutter", "iOS & Android", "App Store Publishing", "Push Notifications"]
     },
     {
       icon: Database,
-      title: "API Development & Integration",
-      description: "RESTful APIs, GraphQL endpoints, and third-party integrations. Secure, scalable, and well-documented backend services.",
-      features: ["REST APIs", "GraphQL", "Third-party Integration", "API Documentation"]
+      title: "API & Backend Development",
+      description: "Robust backend infrastructure with RESTful APIs, authentication, database design, and third-party integrations. Secure, scalable, and well-documented.",
+      features: ["REST & GraphQL APIs", "Authentication & Security", "Database Architecture", "Third-party Integration"]
     },
     {
-      icon: Wrench,
-      title: "Maintenance & Support",
-      description: "Ongoing maintenance, bug fixes, feature updates, and technical support to keep your applications running smoothly.",
-      features: ["Bug Fixes", "Feature Updates", "Performance Monitoring", "Technical Support"]
-    },
-    {
-      icon: Zap,
-      title: "Performance Optimization",
-      description: "Speed up your existing applications with performance audits, code optimization, and infrastructure improvements.",
-      features: ["Performance Audits", "Code Optimization", "Database Tuning", "Infrastructure Setup"]
+      icon: Code2,
+      title: "UI/UX Optimization",
+      description: "Transform your app's user experience with modern, responsive interfaces. I'll refine your design, improve performance, and ensure accessibility.",
+      features: ["Responsive Design", "Performance Tuning", "Accessibility Standards", "Modern UI Patterns"]
     }
   ];
 
@@ -55,12 +43,12 @@ const Services = () => {
             Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive development services to bring your ideas to life. 
-            From concept to deployment, I handle every aspect of your project.
+            From idea to launch, I deliver the core services that turn your vision into a working product. 
+            Fast, reliable, and built to scale.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => (
             <div key={index} className="card-hover rounded-2xl p-8">
               <div className="mb-6">
@@ -81,6 +69,23 @@ const Services = () => {
               </ul>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-16">
+          <div className="inline-block p-8 card-hover rounded-2xl">
+            <h3 className="text-2xl font-bold mb-4">Ready to Build Your Next App?</h3>
+            <p className="text-lg text-muted-foreground mb-6 max-w-xl">
+              Let's discuss your project and explore how I can help bring your idea to life with speed, quality, and scalable architecture.
+            </p>
+            <Button 
+              size="lg" 
+              className="btn-hero px-8 py-6 text-lg"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Book a Free Consultation
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
         </div>
       </div>
     </section>

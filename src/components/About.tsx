@@ -5,18 +5,18 @@ const About = () => {
   const features = [
     {
       icon: Code2,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code following industry best practices and modern development patterns."
+      title: "Speed & Quality",
+      description: "Rapid development without compromising code quality. I deliver working prototypes and MVPs quickly using battle-tested tools and frameworks."
     },
     {
       icon: Brain,
-      title: "Problem Solving",
-      description: "Analyzing complex requirements and developing efficient solutions that drive business growth."
+      title: "Scalable Architecture",
+      description: "Building solutions that grow with your business. Clean, maintainable code and infrastructure that handles increasing demands."
     },
     {
       icon: Users,
-      title: "Client-Focused",
-      description: "Delivering projects on time with clear communication and ongoing support for long-term success."
+      title: "Reliability & Clarity",
+      description: "On-time delivery, transparent communication, and ongoing support. You'll always know where your project stands."
     }
   ];
 
@@ -38,14 +38,14 @@ const About = () => {
               </div>
               <div className="flex-1 lg:text-left text-center">
                 <p className="text-lg text-muted-foreground mb-4">
-                  I'm a passionate full-stack developer with over 3 years of experience building 
-                  web and mobile applications. I specialize in creating robust, scalable solutions 
-                  using modern technologies and frameworks.
+                  I partner with early-stage startups and small businesses to transform ideas into 
+                  production-ready web and mobile applications. With 3+ years of experience, I focus 
+                  on delivering MVPs and scalable products that drive real business value.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  My expertise spans across frontend and backend development, mobile app creation, 
-                  and API integration. I pride myself on writing clean, efficient code and delivering 
-                  solutions that not only meet requirements but exceed expectations.
+                  My approach combines speed with quality—using proven tech stacks like React, Node.js, 
+                  and Flutter to build reliable, maintainable solutions. I prioritize clear communication, 
+                  on-time delivery, and architecture that grows with your business.
                 </p>
               </div>
             </div>
