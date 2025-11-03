@@ -39,7 +39,7 @@ const About = () => {
               <div className="flex-1 lg:text-left text-center">
                 <p className="text-lg text-muted-foreground mb-4">
                   I partner with early-stage startups and small businesses to transform ideas into 
-                  production-ready web and mobile applications. With 3+ years of experience, I focus 
+                  production-ready web and mobile applications. With 4+ years of experience, I focus 
                   on delivering MVPs and scalable products that drive real business value.
                 </p>
                 <p className="text-lg text-muted-foreground">
