@@ -45,7 +45,7 @@ const Navigation = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("#home"); }}
             className="text-xl font-bold text-gradient-primary"
           >
-            &lt;mahir.dev /&gt;
+            Mahir Patel
           </a>
 
           {/* Desktop Navigation */}

@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div>
             <h3 className="text-xl font-bold text-gradient-primary mb-4">
-              &lt;mahir.dev /&gt;
+              Mahir Patel
             </h3>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Full-stack developer passionate about creating innovative solutions 
@@ -96,7 +96,7 @@ const Footer = () => {
             © {currentYear} Full-Stack Developer Portfolio. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm flex items-center">
-            Made with <Heart className="h-4 w-4 text-red-500 mx-1" fill="currentColor" /> and lots of coffee
+            Made with <Heart className="h-4 w-4 text-red-500 mx-1" fill="currentColor" /> by Mahir Patel and lots of coffee
           </p>
         </div>
       </div>
