@@ -1,5 +1,5 @@
 import { Code2, Brain, Users } from "lucide-react";
-import mahirPhoto from "@/assets/mahir-photo.jpg";
+import mahirPhoto from "@/assets/mahir-photo.png";
 
 const About = () => {
   const features = [
